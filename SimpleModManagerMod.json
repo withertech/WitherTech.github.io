@@ -1,8 +1,10 @@
 {
-    "$id": "https://withertech.com/SimpleModManagerMod.json",
     "$schema": "http://json-schema.org/draft-07/schema",
-    "default": {},
+    "$id": "https://withertech.com/SimpleModManagerMod.json",
+    "type": "object",
+    "title": "The root schema",
     "description": "The root schema comprises the entire JSON document.",
+    "default": {},
     "examples": [
         {
             "id": "examplemod",
@@ -21,10 +23,10 @@
         "name",
         "description",
         "author",
-        "website"
+        "website",
+        "icon",
+        "dependencies"
     ],
-    "title": "The root schema",
-    "type": "object",
     "properties": {
         "id": {
             "$id": "#/properties/id",
