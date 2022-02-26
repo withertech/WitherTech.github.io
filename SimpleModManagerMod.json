@@ -8,6 +8,7 @@
     "examples": [
         {
             "id": "examplemod",
+            "titleid": "0100000000000000",
             "name": "Example",
             "description": "An Example Mod",
             "author": "Example Author",
@@ -20,6 +21,7 @@
     ],
     "required": [
         "id",
+        "titleid",
         "name",
         "description",
         "author",
@@ -36,6 +38,16 @@
             "default": "",
             "examples": [
                 "examplemod"
+            ]
+        },
+        "titleid": {
+            "$id": "#/properties/titleid",
+            "type": "string",
+            "title": "The titleid schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "0100000000000000"
             ]
         },
         "name": {
