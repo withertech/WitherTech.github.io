@@ -2,8 +2,8 @@
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "https://withertech.com/SimpleModManagerMod.json",
     "type": "object",
-    "title": "The root schema",
-    "description": "The root schema comprises the entire JSON document.",
+    "title": "SimpleModManager mod.json Schema",
+    "description": "A file defining the metadata of a SimpleModManager mod",
     "default": {},
     "examples": [
         {
@@ -35,8 +35,8 @@
         "id": {
             "$id": "#/properties/id",
             "type": "string",
-            "title": "The id schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "Mod ID",
+            "description": "A unique identifier for differentiating between mods",
             "default": "",
             "examples": [
                 "examplemod"
@@ -45,8 +45,8 @@
         "titleid": {
             "$id": "#/properties/titleid",
             "type": "string",
-            "title": "The titleid schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "Title ID",
+            "description": "The Title ID that this mod affects",
             "default": "",
             "examples": [
                 "0100000000000000"
@@ -55,8 +55,8 @@
         "name": {
             "$id": "#/properties/name",
             "type": "string",
-            "title": "The name schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "Name",
+            "description": "The name of the mod as seen in the GUI",
             "default": "",
             "examples": [
                 "Example"
@@ -65,8 +65,8 @@
         "version": {
             "$id": "#/properties/version",
             "type": "string",
-            "title": "The version schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "Version",
+            "description": "The version of the mod formatted as \"major.minor.patch\"",
             "default": "",
             "examples": [
                 "1.0.0"
@@ -75,8 +75,8 @@
         "description": {
             "$id": "#/properties/description",
             "type": "string",
-            "title": "The description schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "Description",
+            "description": "An explanation about what the mod does",
             "default": "",
             "examples": [
                 "An Example Mod"
@@ -85,8 +85,8 @@
         "author": {
             "$id": "#/properties/author",
             "type": "string",
-            "title": "The author schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "Author",
+            "description": "The author of the mod. If multiple authors seperate them with \" ,\"",
             "default": "",
             "examples": [
                 "Example Author"
@@ -95,8 +95,8 @@
         "website": {
             "$id": "#/properties/website",
             "type": "string",
-            "title": "The website schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "Website",
+            "description": "The website where this mod can be found",
             "default": "",
             "examples": [
                 "http://example.com"
@@ -105,8 +105,8 @@
         "icon": {
             "$id": "#/properties/icon",
             "type": "string",
-            "title": "The icon schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "Icon",
+            "description": "The filename of the icon to be displayed in the GUI. Icon must be a 256x256 png",
             "default": "",
             "examples": [
                 "icon.png"
@@ -115,8 +115,8 @@
         "dependencies": {
             "$id": "#/properties/dependencies",
             "type": "array",
-            "title": "The dependencies schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "Dependencies",
+            "description": "A list of Mod IDs that this mod depends on. If none leave the array empty",
             "default": [],
             "examples": [
                 [
@@ -130,8 +130,8 @@
                     {
                         "$id": "#/properties/dependencies/items/anyOf/0",
                         "type": "string",
-                        "title": "The first anyOf schema",
-                        "description": "An explanation about the purpose of this instance.",
+                        "title": "Dependency Mod ID",
+                        "description": "The Mod ID of the dependency",
                         "default": "",
                         "examples": [
                             "examplemod2"
