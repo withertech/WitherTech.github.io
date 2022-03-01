@@ -10,6 +10,7 @@
             "id": "examplemod",
             "titleid": "0100000000000000",
             "name": "Example",
+            "version": "1.0.0",
             "description": "An Example Mod",
             "author": "Example Author",
             "website": "http://example.com",
@@ -23,6 +24,7 @@
         "id",
         "titleid",
         "name",
+        "version",
         "description",
         "author",
         "website",
@@ -58,6 +60,16 @@
             "default": "",
             "examples": [
                 "Example"
+            ]
+        },
+        "version": {
+            "$id": "#/properties/version",
+            "type": "string",
+            "title": "The version schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "1.0.0"
             ]
         },
         "description": {
